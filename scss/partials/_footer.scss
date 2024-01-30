@@ -1,0 +1,329 @@
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+
+
+footer {
+    background: $graybgcolor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media only screen and (max-width: 992px) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    h2 {
+        font-weight: 800;
+        color: $themecolor;
+        font-size: 18px;
+        line-height: 1;
+        margin: 0 0 25px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+
+}
+
+.sub-menu {
+    padding: 60px 0;
+    border-bottom: solid 4px #333333;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0px 0 30px;
+
+    }
+
+}
+
+.menuitem-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    border-bottom: solid 4px #333333;
+
+    @media only screen and (max-width: 768px) {
+        border-bottom: 0;
+
+    }
+
+    .navigation-menu {
+        max-width: 25%;
+        margin-bottom: 25px;
+        flex: 25%;
+
+        @media only screen and (max-width: 768px) {
+            max-width: 50%;
+
+            flex: 50%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            max-width: 100%;
+
+            flex: 100%;
+        }
+
+        h3 {
+            font-weight: 800;
+            color: $whitecolor;
+            font-size: 26px;
+            line-height: 1;
+            margin: 0 0 20px;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 19px;
+                margin-bottom: 15px;
+            }
+        }
+
+        ul {
+            li {
+                margin-bottom: 5px;
+
+                a {
+                    color: #666666;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    display: block;
+
+
+                    // @media only screen and (min-width: 1440px) {
+                    //     font-size: 18px;
+                    // }
+                }
+
+                &:hover {
+                    a {
+                        color: $themecolor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.quciklinks-menu {
+
+    margin-top: 5px;
+    border-right: solid 4px #333333;
+
+    @media only screen and (max-width: 992px) {
+        border-right: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            max-width: 50%;
+            flex: 50%;
+
+            a {
+                line-height: 1.5;
+                color: $whitecolor;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+                font-size: 18px;
+                font-weight: 800;
+
+                &:hover {
+                    color: $themecolor;
+                    transition: all ease 0.5s;
+                }
+
+                // @media only screen and (min-width: 1440px) {
+
+                //     font-size: 25px;
+
+                // }
+            }
+        }
+    }
+}
+
+.menuright {
+    margin-top: 35px;
+    padding-left: 65px;
+
+    @media only screen and (max-width: 992px) {
+        padding-left: 0;
+    }
+
+    a {
+        color: $themecolor;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 800;
+        display: block;
+
+        // @media only screen and (min-width: 1440px) {
+
+        //     font-size: 25px;
+
+        // }
+
+    }
+}
+
+.socialmedia-menu {
+    margin-top: 20px;
+    padding-left: 65px;
+
+    @media only screen and (max-width: 992px) {
+        padding-left: 0;
+    }
+
+    label {
+
+        color: #a7a9ac;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 1;
+        display: inline-block;
+        margin-right: 50px;
+        font-weight: 800;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 17px;
+            margin-right: 20px;
+        }
+    }
+
+
+    a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        display: inline-block;
+        background: $whitecolor;
+        border-radius: 50%;
+        color: $graybgcolor;
+        font-size: 30px;
+        transition: all ease 0.5s;
+        text-align: center;
+        margin-right: 10px;
+
+        @media only screen and (max-width: 768px) {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 21px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 21px;    margin-right: 0;
+    margin-left: 8px;
+        }
+
+        &:hover {
+            color: $themecolor;
+            transition: all ease 0.5s;
+        }
+
+        i {}
+    }
+}
+
+.copyright {
+    padding: 40px 0 0;
+
+    @media only screen and (max-width: 768px) {
+        padding: 20px 0 0;
+    }
+
+    span {
+        line-height: 1.5;
+        color: #666666;
+        transition: all ease 0.5s;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+
+
+    }
+
+    ul {
+        float: right;
+
+        @media only screen and (max-width: 768px) {
+            float: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 15px;
+
+            @media only screen and (max-width: 1200px) {
+                margin-left: 10px;
+            }
+
+            a {
+                line-height: 1.5;
+                color: #666666;
+                transition: all ease 0.5s;
+                font-size: 16px;
+                font-weight: 800;
+
+                &:hover {
+                    color: $themecolor;
+                    transition: all ease 0.5s;
+                }
+
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 992px) {
+        &.changeorder-mobile {
+
+            .order1 {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .menuright {
+        width: 30%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    footer {
+        .socialmedia-menu {
+            width: 68%;
+            margin-top: 20px;
+            display: inline-block;
+            text-align: right;
+
+            label {
+                font-size: 19px;
+                margin-right: 30px;
+            }
+
+            a {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 18px;
+                margin-right: 0;
+                margin-left: 7px;
+
+            }
+        }
+    }
+}
